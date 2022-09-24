@@ -1861,6 +1861,11 @@ react-router@6.4.0:
   dependencies:
     "@remix-run/router" "1.0.0"
 
+react-scroll-into-view@^1.12.0:
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/react-scroll-into-view/-/react-scroll-into-view-1.12.0.tgz#645635cfe5692138dc9a903f96532b1708c6398a"
+  integrity sha512-n2yLN1MyiKL65AmFoYLnd/XOKhrFLB3w5m8Q1sHHcJTmXbpxoqEbCm+JooZvrNfGCaWuYVAJmXhN+uxi4jwYVg==
+
 react-scroll-section@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/react-scroll-section/-/react-scroll-section-3.1.0.tgz#f05083f2f939a3caaae687899e476c3be6465ebf"
