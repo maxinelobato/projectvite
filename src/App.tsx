@@ -1,9 +1,9 @@
-import Sections from "./components/Sections/Sections";
+import { Section } from "./components/Section";
 
 function App() {
   return (
     <>
-      <Sections />
+      <Section />
     </>
   );
 }
