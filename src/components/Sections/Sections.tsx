@@ -7,7 +7,7 @@ import { Specialists } from "./Specialists";
 
 function Sections() {
   return (
-    <>
+    <>      
       <BgBoxImage>
         <Navbar />
         <Header />

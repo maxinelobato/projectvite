@@ -8,18 +8,11 @@ import {
   Link,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import { Logo } from "./Logo";
-import {
-  ScrollingProvider,
-  useScrollSection,
-  Section,
-} from "react-scroll-section";
+import { Logo } from "./Logo";[]
+import ScrollIntoView from 'react-scroll-into-view';
 
 export function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const aboutSection = useScrollSection("sobre");
-  const projectSection = useScrollSection("projetos");
-  const specialistsSection = useScrollSection("especialistas");
   return (
     <>
       <Box
@@ -61,28 +54,25 @@ export function Navbar() {
               display={{ base: "none", md: "flex" }}
             >
               <ul
-                style={{ textDecoration: "none" }}
-                onClick={aboutSection.onClick}
-                aria-selected={aboutSection.selected}
+                style={{ textDecoration: "none" }}           
               >
                 <li>Sobre</li>
               </ul>
+              <ScrollIntoView selector="#footer">
               <Link
                 href="#projetos"
-                style={{ textDecoration: "none" }}
-                onClick={projectSection.onClick}
-                _selected={projectSection._selected}
-              >
+                style={{ textDecoration: "none" }}       
+              >           
+                           
                 Projetos
               </Link>
+              </ScrollIntoView>
               <Link
                 href="#especialistas"
-                style={{ textDecoration: "none" }}
-                onClick={specialistsSection.onClick}
-                _selected={specialistsSection._selected}
+                style={{ textDecoration: "none" }}         
               >
                 Especialistas
-              </Link>
+              </Link> 
             </HStack>
           </Stack>
         </Flex>
@@ -98,6 +88,8 @@ export function Navbar() {
         ) : null}
       </Box>
       <Box p={{ base: "5", md: "lg" }} />
+
+      <div id="footer">Scroll target element</div>
     </>
   );
 }
