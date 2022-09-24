@@ -31,7 +31,7 @@ export function Header() {
               py: "-1",
               rounded: "lg",
               color: "orange.400",
-              bg: "blackAlpha.700",
+              bg: "blackAlpha.500",
               fontStyle: "oblique",
             }}
           >
@@ -43,7 +43,9 @@ export function Header() {
           backdropBlur="1rem"
           bgColor={"blackAlpha.50"}
           rounded={"lg"}
-          boxShadow={"dark-lg"}
+          border={"1px"}
+          borderColor={"whiteAlpha.200"}
+          boxShadow={"inner"}
         >
           <Text
             color={"whiteAlpha.900"}
