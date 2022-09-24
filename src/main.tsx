@@ -6,7 +6,7 @@ import { CTAHelp } from "./components/Buttons/CTAHelp";
 
 const config = {
   useSystemColorMode: false,
-  initialColorMode: "dark",
+  initialColorMode: "light",
 };
 
 const customTheme = extendTheme({ config });
