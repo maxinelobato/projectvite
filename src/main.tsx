@@ -9,7 +9,7 @@ import App from "./App";
 import { CTAHelp } from "./components/Buttons/CTAHelp";
 
 const config: ThemeConfig = {
-  initialColorMode: "light",
+  initialColorMode: "dark",
   useSystemColorMode: false,
 };
 
