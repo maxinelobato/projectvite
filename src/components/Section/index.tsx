@@ -90,6 +90,7 @@ export function Section() {
                     style={{ textDecoration: "none" }}
                     rounded={"lg"}
                     p={3}
+                    className={"ss-item"}
                     _hover={{
                       color: "whiteAlpha.900",
                       bg: "whiteAlpha.50",
@@ -107,6 +108,7 @@ export function Section() {
                       style={{ textDecoration: "none" }}
                       rounded={"lg"}
                       p={3}
+                      className={"ss-item"}
                       _hover={{
                         color: "whiteAlpha.900",
                         bg: "whiteAlpha.50",

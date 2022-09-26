@@ -5,8 +5,9 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import * as ReactDOM from "react-dom/client";
-import App from "./App";
 import { CTAHelp } from "./components/Buttons/CTAHelp";
+import App from "./App";
+import "./index.css";
 
 const config: ThemeConfig = {
   initialColorMode: "dark",

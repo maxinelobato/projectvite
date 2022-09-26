@@ -1,0 +1,10 @@
+.active-scroll-spy {
+  background-color: yellowgreen;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+.ss-item {
+  color: black;
+  padding: 30px;
+  margin: 10px;
+}
