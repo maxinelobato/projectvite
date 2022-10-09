@@ -32,12 +32,12 @@ export function Section() {
         <Box
           backdropFilter="auto"
           backdropBlur="1rem"
-          px={{ base: "4", md: "48" }}
           w={"full"}
           position={"fixed"}
           zIndex={2}
         >
           <Flex
+            px={{ base: "0", md: "36" }}
             h={16}
             alignItems={"center"}
             justifyContent={{ base: "end", sm: "space-between" }}
@@ -69,56 +69,88 @@ export function Section() {
                 display={{ base: "none", md: "flex" }}
               >
                 <ScrollIntoView selector="#sobre" smooth>
-                  <Link
-                    href="#sobre"
-                    style={{ textDecoration: "none" }}
+                  <Box
+                    as="button"
                     rounded={"lg"}
                     p={3}
+                    _active={{
+                      transform: "scale(0.98)",
+                      color: "whiteAlpha.900",
+                      bg: "blackAlpha.500",
+                      border: "1px",
+                      borderColor: "whiteAlpha.200",
+                    }}
+                    _focus={{
+                      color: "whiteAlpha.900",
+                      bg: "blackAlpha.500",
+                      border: "1px",
+                      borderColor: "whiteAlpha.200",
+                    }}
                     _hover={{
                       color: "whiteAlpha.900",
-                      bg: "whiteAlpha.50",
+                      bg: "blackAlpha.500",
                       border: "1px",
                       borderColor: "whiteAlpha.200",
                     }}
                   >
                     Sobre
-                  </Link>
+                  </Box>
                 </ScrollIntoView>
                 <ScrollIntoView selector="#projetos" smooth>
-                  <Link
-                    href="#projetos"
-                    style={{ textDecoration: "none" }}
+                  <Box
+                    as="button"
                     rounded={"lg"}
                     p={3}
-                    className={"ss-item"}
+                    _active={{
+                      transform: "scale(0.98)",
+                      color: "whiteAlpha.900",
+                      bg: "blackAlpha.500",
+                      border: "1px",
+                      borderColor: "whiteAlpha.200",
+                    }}
+                    _focus={{
+                      color: "whiteAlpha.900",
+                      bg: "blackAlpha.500",
+                      border: "1px",
+                      borderColor: "whiteAlpha.200",
+                    }}
                     _hover={{
                       color: "whiteAlpha.900",
-                      bg: "whiteAlpha.50",
+                      bg: "blackAlpha.500",
                       border: "1px",
                       borderColor: "whiteAlpha.200",
                     }}
                   >
-                    Projeto
-                  </Link>
+                    Projetos
+                  </Box>
                 </ScrollIntoView>
                 <ScrollIntoView selector="#especialistas" smooth>
-                  <Flex>
-                    <Link
-                      href="#especialistas"
-                      style={{ textDecoration: "none" }}
-                      rounded={"lg"}
-                      p={3}
-                      className={"ss-item"}
-                      _hover={{
-                        color: "whiteAlpha.900",
-                        bg: "whiteAlpha.50",
-                        border: "1px",
-                        borderColor: "whiteAlpha.200",
-                      }}
-                    >
-                      Especialistas
-                    </Link>
-                  </Flex>
+                  <Box
+                    as="button"
+                    rounded={"lg"}
+                    p={3}
+                    _active={{
+                      transform: "scale(0.98)",
+                      color: "whiteAlpha.900",
+                      bg: "blackAlpha.500",
+                      border: "1px",
+                      borderColor: "whiteAlpha.200",
+                    }}
+                    _focus={{
+                      color: "whiteAlpha.900",
+                      bg: "blackAlpha.500",
+                      border: "1px",
+                      borderColor: "whiteAlpha.200",
+                    }}
+                    _hover={{
+                      color: "whiteAlpha.900",
+                      bg: "blackAlpha.500",
+                      border: "1px",
+                      borderColor: "whiteAlpha.200",
+                    }}
+                  >
+                    Especialistas
+                  </Box>
                 </ScrollIntoView>
               </HStack>
             </Stack>
@@ -128,38 +160,94 @@ export function Section() {
             <Box pb={4} display={{ md: "none" }}>
               <Stack as={"nav"} spacing={4}>
                 <ScrollIntoView selector="#sobre" smooth>
-                  <Link
-                    href="#sobre"
-                    style={{ textDecoration: "none" }}
+                  <Box
+                    as="button"
                     rounded={"lg"}
                     p={3}
+                    _active={{
+                      transform: "scale(0.98)",
+                      color: "whiteAlpha.900",
+                      bg: "blackAlpha.500",
+                      border: "1px",
+                      borderColor: "whiteAlpha.200",
+                    }}
+                    _focus={{
+                      color: "whiteAlpha.900",
+                      bg: "blackAlpha.500",
+                      border: "1px",
+                      borderColor: "whiteAlpha.200",
+                    }}
+                    _hover={{
+                      color: "whiteAlpha.900",
+                      bg: "blackAlpha.500",
+                      border: "1px",
+                      borderColor: "whiteAlpha.200",
+                    }}
                   >
                     Sobre
-                  </Link>
+                  </Box>
                 </ScrollIntoView>
                 <ScrollIntoView selector="#projetos" smooth>
-                  <Link
-                    href="#projetos"
-                    style={{ textDecoration: "none" }}
+                  <Box
+                    as="button"
+                    rounded={"lg"}
                     p={3}
+                    _active={{
+                      transform: "scale(0.98)",
+                      color: "whiteAlpha.900",
+                      bg: "blackAlpha.500",
+                      border: "1px",
+                      borderColor: "whiteAlpha.200",
+                    }}
+                    _focus={{
+                      color: "whiteAlpha.900",
+                      bg: "blackAlpha.500",
+                      border: "1px",
+                      borderColor: "whiteAlpha.200",
+                    }}
+                    _hover={{
+                      color: "whiteAlpha.900",
+                      bg: "blackAlpha.500",
+                      border: "1px",
+                      borderColor: "orange.200",
+                    }}
                   >
-                    Projeto
-                  </Link>
+                    Projetos
+                  </Box>
                 </ScrollIntoView>
                 <ScrollIntoView selector="#especialistas" smooth>
-                  <Link
-                    href="#especialistas"
-                    style={{ textDecoration: "none" }}
+                  <Box
+                    as="button"
+                    rounded={"lg"}
                     p={3}
+                    _active={{
+                      transform: "scale(0.98)",
+                      color: "whiteAlpha.900",
+                      bg: "blackAlpha.500",
+                      border: "1px",
+                      borderColor: "whiteAlpha.200",
+                    }}
+                    _focus={{
+                      color: "whiteAlpha.900",
+                      bg: "blackAlpha.500",
+                      border: "1px",
+                      borderColor: "whiteAlpha.200",
+                    }}
+                    _hover={{
+                      color: "whiteAlpha.900",
+                      bg: "blackAlpha.500",
+                      border: "1px",
+                      borderColor: "whiteAlpha.200",
+                    }}
                   >
                     Especialistas
-                  </Link>
+                  </Box>
                 </ScrollIntoView>
               </Stack>
             </Box>
           ) : null}
         </Box>
-        <Box p={{ base: "5", md: "lg" }} id="sobre" />
+        <Box p={{ base: "14", md: "lg" }} id="sobre" />
         {/* SECTION HEADER */}
         <Container maxW={"7xl"}>
           <Stack
@@ -279,14 +367,14 @@ export function Section() {
                 alt={"Login Image"}
                 height={{ sm: "24rem", lg: "28rem" }}
                 width={{ sm: "32rem", lg: "40rem" }}
-                mt={{ base: -10, sm: 22 }}
+                mt={{ base: 5, sm: 22 }}
                 src={imgCTA}
               />
             </Flex>
           </Stack>
         </Container>
         {/* SECTION SPECIALISTS */}
-        <Box p={{ base: "4", md: "sm" }} id="especialistas" />
+        <Box p={{ base: "0", md: "sm" }} id="especialistas" />
         <Container maxW={"7xl"}>
           <Stack
             display={{ base: "flex" }}
