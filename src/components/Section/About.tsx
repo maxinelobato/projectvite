@@ -20,7 +20,7 @@ export function About() {
             textAlign={"center"}
             align={"center"}
             spacing={{ base: 8, md: 10 }}
-            py={{ base: 10, md: 10 }}
+            py={{ base: 8, md: 10 }}
           >
             <Heading
               fontWeight={700}
@@ -54,14 +54,18 @@ export function About() {
               <Text
                 color={"whiteAlpha.900"}
                 maxW={"3xl"}
-                fontSize={{ base: "xl", sm: "sm", md: "2xl" }}
+                fontSize={{ base: "lg", sm: "lg", md: "2xl" }}
                 fontStyle={"oblique"}
               >
                 Você sabia que uma página de 2 segundos carregando, pode
                 resultar em um abandono de até 87% das visitas?
               </Text>
             </Box>
-            <Stack spacing={6} direction={{ base: "column", sm: "row" }}>
+            <Stack
+              spacing={6}
+              direction={{ base: "column", sm: "column" }}
+              py={{ base: 0, md: 0 }}
+            >
               <CTAWhatsapp />
             </Stack>
           </Stack>

@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 export function CTAScrollToTop() {
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, []);
 
   return (
@@ -18,9 +18,11 @@ export function CTAScrollToTop() {
     >
       <IconButton
         aria-label="behavior"
-        bgColor={"blackAlpha.900"}
+        bgColor="blackAlpha.50"
         variant="solid"
         size="lg"
+        border="2px"
+        borderColor="whiteAlpha.900"
         icon={<ArrowUpIcon />}
         onClick={() => {
           window.scrollTo({ top: 0, left: 0, behavior: "auto" });

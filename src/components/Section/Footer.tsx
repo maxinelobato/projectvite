@@ -8,6 +8,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { FaGithub, FaFacebook, FaInstagram } from "react-icons/fa";
+import ScrollIntoView from "react-scroll-into-view";
 import { Logo } from "./Logo";
 
 export function Footer() {
@@ -45,9 +46,15 @@ export function Footer() {
               Informações
             </Text>
             <Stack spacing="3" shouldWrapChildren>
-              <Button variant="link">Sobre</Button>
-              <Button variant="link">Projetos</Button>
-              <Button variant="link">Especialistas</Button>
+              <ScrollIntoView selector="#about" smooth>
+                <Button variant="link">Sobre</Button>
+              </ScrollIntoView>
+              <ScrollIntoView selector="#projetos" smooth>
+                <Button variant="link">Projetos</Button>
+              </ScrollIntoView>
+              <ScrollIntoView selector="#specialists" smooth>
+                <Button variant="link">Especialistas</Button>
+              </ScrollIntoView>
             </Stack>
           </Stack>
         </Stack>
