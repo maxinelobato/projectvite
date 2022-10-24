@@ -5,8 +5,8 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import * as ReactDOM from "react-dom/client";
-import { CTAHelp } from "./components/Buttons/CTAHelp";
 import App from "./App";
+import { CTAScrollToTop } from "./components/Buttons/CTAScrollToTop";
 import "./index.css";
 
 const config: ThemeConfig = {
@@ -19,7 +19,7 @@ const theme = extendTheme({ config });
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
-      <CTAHelp />
+      <CTAScrollToTop />
       <App />
     </ChakraProvider>
   </React.StrictMode>,
