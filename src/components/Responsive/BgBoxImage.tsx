@@ -6,7 +6,6 @@ export function BgBoxImage(props: BoxProps) {
     <Box
       w="100%"
       h="80vh"
-      loading="lazy"
       bgImage={imgBG}
       bgSize={"cover"}
       bgPosition={"center center"}

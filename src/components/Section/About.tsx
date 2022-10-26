@@ -13,18 +13,18 @@ export function About() {
   return (
     <>
       <BgBoxImage>
-        <Box p={{ base: "14", md: "10" }} id="about" />
+        <Box p={{ base: "14", md: "sm" }} id="about" />
         <Container maxW={"7xl"}>
           <Stack
             display={{ base: "flex" }}
             textAlign={"center"}
             align={"center"}
             spacing={{ base: 8, md: 10 }}
-            py={{ base: 8, md: 10 }}
+            py={{ base: 0, md: 10 }}
           >
             <Heading
-              fontWeight={700}
-              fontSize={{ base: "4xl", sm: "5xl", md: "7xl" }}
+              fontWeight={{ base: "500", sm: "600", md: "700" }}
+              fontSize={{ base: "3xl", sm: "5xl", md: "7xl" }}
               lineHeight={"145%"}
             >
               Você está buscando uma{" "}
@@ -54,18 +54,14 @@ export function About() {
               <Text
                 color={"whiteAlpha.900"}
                 maxW={"3xl"}
-                fontSize={{ base: "lg", sm: "lg", md: "2xl" }}
+                fontSize={{ base: "sm", sm: "lg", md: "2xl" }}
                 fontStyle={"oblique"}
               >
                 Você sabia que uma página de 2 segundos carregando, pode
                 resultar em um abandono de até 87% das visitas?
               </Text>
             </Box>
-            <Stack
-              spacing={6}
-              direction={{ base: "column", sm: "column" }}
-              py={{ base: 0, md: 0 }}
-            >
+            <Stack spacing={6} direction={{ base: "column", sm: "column" }}>
               <CTAWhatsapp />
             </Stack>
           </Stack>
