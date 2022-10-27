@@ -13,14 +13,14 @@ export function About() {
   return (
     <>
       <BgBoxImage>
-        <Box p={{ base: "14", md: "sm" }} id="about" />
+        <Box p={{ base: "14", md: "10" }} id="about" />
         <Container maxW={"7xl"}>
           <Stack
             display={{ base: "flex" }}
             textAlign={"center"}
             align={"center"}
             spacing={{ base: 8, md: 10 }}
-            py={{ base: 0, md: 10 }}
+            py={{ base: 0, md: 0 }}
           >
             <Heading
               fontWeight={{ base: "500", sm: "600", md: "700" }}
