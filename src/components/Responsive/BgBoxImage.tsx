@@ -1,14 +1,14 @@
-import { Box, BoxProps } from "@chakra-ui/react";
-import imgBG from "../../assets/bgresponsive.jpg";
+import { Box, BoxProps } from '@chakra-ui/react';
+import imgBG from '../../assets/bgresponsive.png';
 
 export function BgBoxImage(props: BoxProps) {
   return (
     <Box
       w="100%"
-      h="80vh"
       bgImage={imgBG}
-      bgSize={"cover"}
-      bgPosition={"center center"}
+      bgSize={'contain'}
+      bgRepeat={'no-repeat'}
+      bgPosition={'center center'}
       {...props}
     />
   );

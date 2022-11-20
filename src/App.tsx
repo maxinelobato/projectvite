@@ -1,15 +1,18 @@
-import { About } from "./components/Section/About";
-import { Footer } from "./components/Section/Footer";
-import { Navbar } from "./components/Section/Navbar";
-import { Specialists } from "./components/Section/Specialists";
-import { SplitImage } from "./components/Section/SplitImage";
+import { BgBoxImage } from './components/Responsive/BgBoxImage';
+import { Header } from './components/Section/Header';
+import { Footer } from './components/Section/Footer';
+import { Navbar } from './components/Section/Navbar';
+import { Specialists } from './components/Section/Specialists';
+import { Projects } from './components/Section/Projects';
 
 function App() {
   return (
     <>
       <Navbar />
-      <About />
-      <SplitImage />
+      <BgBoxImage>
+        <Header />
+      </BgBoxImage>
+      <Projects />
       <Specialists />
       <Footer />
     </>

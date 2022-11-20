@@ -1,15 +1,15 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import image from "@rollup/plugin-image";
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import image from '@rollup/plugin-image';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     react(),
-    {
-      ...image(),
-      enforce: "pre",
-    },
+    // {
+    //   ...image(),
+    //   enforce: 'pre',
+    // },
   ],
   server: {
     port: 3000,
@@ -17,7 +17,7 @@ export default defineConfig({
       usePolling: true,
     },
   },
-  optimizeDeps: {
-    include: ["esm-dep > cjs-dep"],
-  },
+  // optimizeDeps: {
+  //   include: ['esm-dep > cjs-dep'],
+  // },
 });

@@ -1,12 +1,12 @@
-import { Icon, IconProps } from "@chakra-ui/react";
+import { Icon, IconProps } from '@chakra-ui/react';
 
 export function BgWavesSpecialists(props: IconProps) {
   return (
     <Icon
-      mt={{ base: "4", md: "-150" }}
+      mt={{ base: '4', md: '-150' }}
       width="100%"
       height="50%"
-      fill="#1A202C"
+      fill="#000"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1440 320"
       {...props}
